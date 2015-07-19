@@ -1,5 +1,5 @@
 # AudioCurve
-![screenshot](https://cloud.githubusercontent.com/assets/7461595/8578640/1ba82028-25b0-11e5-93ad-dd8abd672e9e.png)
+![screenshot](https://cloud.githubusercontent.com/assets/7461595/8764008/641dc97c-2dba-11e5-9652-91bb7d197067.png)
 Convert audio to curves in Natron.
 
 # Install
