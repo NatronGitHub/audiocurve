@@ -199,6 +199,7 @@ def createInstance(app,group):
     param.setAddNewLine(True)
     param.setAnimationEnabled(False)
     param.setDefaultValue(os.path.join(tempfile.gettempdir(),"audiocurve"))
+    param.setValue(os.path.join(tempfile.gettempdir(),"audiocurve"))
     lastNode.curveFile = param
     del param
 
@@ -232,6 +233,7 @@ def createInstance(app,group):
     param.setDisplayMinimum(0, 0)
     param.setDisplayMaximum(100, 0)
     param.setDefaultValue(24, 0)
+    param.setValue(24, 0)
 
     #Add the param to the page
     lastNode.userNatron.addParam(param)
@@ -246,7 +248,8 @@ def createInstance(app,group):
     param = lastNode.createIntParam("duraTion", "Frames")
     param.setDisplayMinimum(0, 0)
     param.setDisplayMaximum(10000, 0)
-    param.setDefaultValue(240, 0)
+    param.setDefaultValue(250, 0)
+    param.setValue(250, 0)
 
     #Add the param to the page
     lastNode.userNatron.addParam(param)
@@ -262,6 +265,7 @@ def createInstance(app,group):
     param.setDisplayMinimum(0, 0)
     param.setDisplayMaximum(500, 0)
     param.setDefaultValue(100, 0)
+    param.setValue(100, 0)
 
     #Add the param to the page
     lastNode.userNatron.addParam(param)
@@ -277,6 +281,7 @@ def createInstance(app,group):
     param.setDisplayMinimum(0, 0)
     param.setDisplayMaximum(500, 0)
     param.setDefaultValue(100, 0)
+    param.setValue(100, 0)
 
     #Add the param to the page
     lastNode.userNatron.addParam(param)
@@ -292,6 +297,7 @@ def createInstance(app,group):
     param.setDisplayMinimum(1, 0)
     param.setDisplayMaximum(500, 0)
     param.setDefaultValue(1, 0)
+    param.setValue(1, 0)
 
     #Add the param to the page
     lastNode.userNatron.addParam(param)
@@ -311,7 +317,7 @@ def createInstance(app,group):
     #Set param properties
     param.setHelp("Generate curve from parameters")
     param.setAddNewLine(True)
-    param.setPersistant(False)
+    param.setPersistent(False)
     param.setEvaluateOnChange(False)
     lastNode.importCurve = param
     del param
